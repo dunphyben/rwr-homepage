@@ -20,6 +20,35 @@ pre
 
 .page
   padding 20px
+  
+.siteLogo
+  margin-left -20px
+  margin-right -20px
+  margin-top -20px
+  margin-bottom 40px
+  display flex
+  align-items center
+  height 60vh
+  min-height 400px
+  // background url(./img/rwr-computer-general.png) 0 -100px
+  background linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/rwr-computer-general.png') no-repeat 0 -100px
+  background-size cover
+  @media(max-width 750px)
+    background-size 900px
+    background-position -80px 0
+  @media(max-width 500px)
+    background-size 700px
+    background-position -100px 0
+    
+  
+  +below(420px)
+    display block
+    
+  img
+    display block
+    width 200px
+    margin-right auto
+    margin-left auto
 
 .siteTitle
   display flex
@@ -27,20 +56,15 @@ pre
 
   +below(420px)
     display block
-
-  img
-    display inline-block
-    width 80px
-    height 80px
-    margin-right 20px
-
-    +below(420px)
-      display block
-      margin 0 auto
+    
+  .centerText
+    margin-left auto
+    margin-right auto
+    color white
 
 .hl
   font-weight bold
-  color react-blue
+  color white
 .App
   background black
   min-width 320px
@@ -48,7 +72,7 @@ pre
   h1
     color react-blue
     font-weight 300
-    font-size 52px
+    font-size 3em
 
   p
     color white
@@ -68,4 +92,7 @@ pre
 
   .active
     background black
+    color white
+    border-bottom 2px solid white
+    margin-bottom -2px
 

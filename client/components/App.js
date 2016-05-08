@@ -4,7 +4,7 @@ import 'normalize.css';
 
 // Using CSS Modules so we assign the styles to a variable
 import s from './App.styl';
-import logo from './react-logo.png'; 
+import logo from './img/rwreact-logo.svg'; 
 
 // Favicon link is in the template, this just makes webpack package it up for us
 import './favicon.ico';
@@ -13,15 +13,20 @@ export const Home = React.createClass({
   render() {
     return (
       <div className={s.page}>
-        <div className={s.siteTitle}>
-          <img src={logo} alt='React Logo' />
-          <h1>React Static Boilerplate</h1>
+        <div className={s.siteBackground}>
         </div>
-        <p>Why React static?</p>
+        <div className={s.siteLogo}>
+          <img src={logo} alt='Real World React Logo' />
+        </div>
+        <div className={s.siteTitle}>
+          <h1 className={s.centerText}>Talks. Workshops. Community.</h1>
+        </div>
+        <p>We are a community organization dedicated to advancing knowledge, awareness, and usage of React.js.</p>
+        <p>Organizers</p>
         <ul>
-          <li><span className={s.hl}>Dev</span> friendly</li>
-          <li><span className={s.hl}>User</span> friendly</li>
-          <li><span className={s.hl}>SEO</span> friendly</li>
+          <li>Ian <span className={s.hl}>Sinnott</span></li>
+          <li>Berkeley <span className={s.hl}>Martinez</span></li>
+          <li>Benjamin <span className={s.hl}>Dunphy</span></li>
         </ul>
       </div>
     );
