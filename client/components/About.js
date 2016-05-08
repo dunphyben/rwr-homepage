@@ -12,5 +12,5 @@ export const About = React.createClass({
         <p>Welcome, to about us.</p>
       </div>
     );
-  },
+  }, 
 });

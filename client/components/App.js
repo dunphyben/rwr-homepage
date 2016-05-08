@@ -4,7 +4,7 @@ import 'normalize.css';
 
 // Using CSS Modules so we assign the styles to a variable
 import s from './App.styl';
-import logo from './react-logo.png';
+import logo from './react-logo.png'; 
 
 // Favicon link is in the template, this just makes webpack package it up for us
 import './favicon.ico';
@@ -53,6 +53,7 @@ export const App = React.createClass({
         <nav className={s.nav}>
           <IndexLink to='/' activeClassName={s.active}>Home</IndexLink>
           <Link to='/about' activeClassName={s.active}>About</Link>
+          <Link to='/workshops' activeClassName={s.active}>Workshops</Link>
         </nav>
         {this.props.children}
       </div>
