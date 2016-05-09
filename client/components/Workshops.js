@@ -12,10 +12,15 @@ export const Workshops = React.createClass({
 						<h1>Workshops</h1>
 					</div>
 				</div>
-				<p>Our workshops are taught by instructors with years of experience building real-world applications.</p>
-				<p>Join our VIP mailing list and get first notification regarding meetup announcements, workshops, and other events.</p>
-				<div className={s.vipLogo}>
-					<img src={rwrVip} alt='Real World React VIP Logo' />
+
+				<div className={s.pageContent}>
+					<p>Learn to build real-world apps with react, <span className={s.blueStrong}>today.</span></p>
+					<p>Our workshops are taught by instructors with years of experience building real-world applications.</p>
+					<p>Join our VIP mailing list and get first notification regarding meetup announcements, workshops, and other events.</p>
+
+					<div className={s.vipLogo}>
+						<img src={rwrVip} alt='Real World React VIP Logo' />
+					</div>
 				</div>
 			</div>
 		);

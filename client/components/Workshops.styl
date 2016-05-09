@@ -1,3 +1,5 @@
+@require '../lib/vars.styl'
+
 .page
 	composes page from './App.styl'
 	
@@ -26,8 +28,17 @@
 	background-size cover
 	
 
-
+.pageContent
+	font-weight 200
+	height 700px
+	@media(min-width 700px)
+		margin 0 50px
 	
+
+	.blueStrong
+		color react-blue
+		font-weight 500
+		
 .vipLogo
 	img
 		width 120px

@@ -59,7 +59,7 @@ export const App = React.createClass({
       <div className={s.App}>
         <nav className={s.nav}>
           <IndexLink to='/' activeClassName={s.active}>Home</IndexLink>
-          <Link to='/about' activeClassName={s.active}>About</Link>
+          <Link to='/talks' activeClassName={s.active}>Talks</Link>
           <Link to='/workshops' activeClassName={s.active}>Workshops</Link>
         </nav>
         {this.props.children}

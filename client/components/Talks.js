@@ -1,8 +1,8 @@
 import React from 'react';
 
-import s from './About.styl';
+import s from './Talks.styl';
 
-export const About = React.createClass({
+export const Talks = React.createClass({
   render() {
     return (
       <div className={s.page}>
