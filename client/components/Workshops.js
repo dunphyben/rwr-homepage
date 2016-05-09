@@ -7,8 +7,10 @@ export const Workshops = React.createClass({
 	render() {
 		return (
 			<div className={s.page}>
-				<div className={s.siteTitle}>
-					<h1>Workshops</h1>
+				<div className={s.workshopBanner}>
+					<div className={s.siteTitle}>
+						<h1>Workshops</h1>
+					</div>
 				</div>
 				<p>Our workshops are taught by instructors with years of experience building real-world applications.</p>
 				<p>Join our VIP mailing list and get first notification regarding meetup announcements, workshops, and other events.</p>

@@ -21,8 +21,10 @@ export const Home = React.createClass({
         <div className={s.siteTitle}>
           <h1 className={s.centerText}>Talks. Workshops. Community.</h1>
         </div>
-        <p>We are a community organization dedicated to advancing knowledge, awareness, and usage of React.js.</p>
-        <p>Organizers</p>
+        <div className={s.homeDescription}>
+          <p className={s.centerText}>Advancing knowledge, awareness, and usage of React.js</p>
+          <p>Organizers</p>
+        </div>
         <ul>
           <li>Ian <span className={s.hl}>Sinnott</span></li>
           <li>Berkeley <span className={s.hl}>Martinez</span></li>

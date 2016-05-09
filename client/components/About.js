@@ -7,9 +7,9 @@ export const About = React.createClass({
     return (
       <div className={s.page}>
         <div className={s.siteTitle}>
-          <h1>About</h1>
+          <h1>Talks</h1>
         </div>
-        <p>Welcome, to about us.</p>
+        <p>We organize talks & presentations from today's leading developers in React. We host them every 45-60 days.</p>
       </div>
     );
   }, 
