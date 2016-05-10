@@ -11,7 +11,7 @@ import webpack from 'webpack';
 import config from './webpack.config.dev.js';
 
 const Html = ({
-  title = 'Rainbow Unicorns',
+  title = 'Real World React',
   bundle = '/app.js',
   body = '',
   favicon = '',

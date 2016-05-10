@@ -1,21 +1,39 @@
 // This is how composition works with CSS Modules
 // http://glenmaddern.com/articles/css-modules
+@require '../lib/vars.styl'
+
 .page
   composes page from './App.styl'
 
 .siteTitle
   composes siteTitle from './App.styl'
   
+  h1
+		display: inline-block
+		margin-left 100px
+		margin-top 100px
+		font-size 4em
+		font-weight bold
+  
 .talksBanner
-  margin-left -20px
-  margin-right -20px
-  margin-top -20px
-  margin-bottom 40px
-  display flex
-  align-items center
-  height 60vh
-  min-height 400px
-  // background url(./img/rwr-computer-general.png) 0 -100px
-  // background linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/rwr-computer-general-gauss.png') no-repeat 0 -100px
-  background-size cover
+	margin-left -20px
+	margin-right -20px
+	margin-top -20px
+	margin-bottom 40px
+	display flex
+	align-items center
+	height 60vh
+	min-height 400px
+	background linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/talks-banner.png') no-repeat 0 0px
+	background-size cover
+	
+.pageContent
+	font-weight 200
+	height 700px
+	@media(min-width 700px)
+		margin 0 50px
+	
 
+	.blueStrong
+		color react-blue
+		font-weight 500
