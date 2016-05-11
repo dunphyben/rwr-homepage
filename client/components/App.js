@@ -4,7 +4,8 @@ import 'normalize.css';
 
 // Using CSS Modules so we assign the styles to a variable
 import s from './App.styl';
-import logo from './img/rwreact-logo.svg'; 
+import logo from './img/rwreact-logo.svg';
+import reactAtomLogo from './img/react-atom.svg'
 
 // Favicon link is in the template, this just makes webpack package it up for us
 import './favicon.ico';
@@ -63,6 +64,11 @@ export const App = React.createClass({
           <Link to='/workshops' activeClassName={s.active}>Workshops</Link>
         </nav>
         {this.props.children}
+        <div className={s.footer}>
+          <div className={s.footContent}>
+            <a href="https://github.com/iansinnott/react-static-boilerplate" target="_blank">Made with <img className={s.smallImg} src={reactAtomLogo} alt='the React.js logo atom' /> in San Francisco</a>
+          </div>
+        </div>
       </div>
     );
   },
